@@ -1,6 +1,6 @@
 //creating Javascript functions
 
-function myFunction() {
+function myFunction(params) {
   //this is the general syntax of declaring a function in Javascript
 } 
 
@@ -22,5 +22,20 @@ function evenORodd(number){
     }
 }
 evenORodd(9)
+
+
+//arrow functions in javascript
+const myfunction = (params) => {
+    //function content
+}
+
+
+const printFactorial = (n) => {
+    if(n <= 1){
+        return 1;
+    }
+    return n * printFactorial(n-1)
+}
+console.log(printFactorial(5))
 
 
